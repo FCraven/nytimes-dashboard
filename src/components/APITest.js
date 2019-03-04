@@ -28,6 +28,8 @@ export default class APITest extends Component {
     console.log(`STATE ==>`,this.state)
     return (
                 <div>
+                  <h1> Hi hi hi </h1>
+                  <div>
                       {this.state.articles.map(
                         (article) =>
                           <div class="card" style={{width: "18rem"}}>
@@ -39,6 +41,7 @@ export default class APITest extends Component {
                                 </div>
                         </div>
                       )}
+                      </div>
               </div>
       )
   }
