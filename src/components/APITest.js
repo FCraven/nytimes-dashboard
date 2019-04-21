@@ -15,7 +15,7 @@ export default class APITest extends Component {
   async componentDidMount(){
     try {
       const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${NYTIMES_API_KEY}`)
-      console.log(`apiKey ==>`,res.data.results)
+      console.log(`apiKey ==>`, res.data.results)
       this.setState({
         articles: res.data.results
       })
@@ -32,12 +32,12 @@ export default class APITest extends Component {
                   <div>
                       {this.state.articles.map(
                         (article) =>
-                          <div className="card" style={{width: "18rem"}}>
+                          <div className="card" style={{width: "18em"}}>
                                  <img src={article.multimedia[3].url} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{article.title}</h5>
                                     <p className="card-text">{article.abstract}.</p>
-                                    <a href={article.short_url} className="btn btn-primary">Go to the Article</a>
+                                    <button><a href={article.short_url} >Go to the Article</a></button>
                                 </div>
                         </div>
                       )}
