@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NYTIMES_API_KEY} from '../secrets'
+import { NYTIMES_API_KEY } from '../secrets'
 import axios from 'axios'
 
 
@@ -32,12 +32,12 @@ export default class APITest extends Component {
                   <div>
                       {this.state.articles.map(
                         (article) =>
-                          <div class="card" style={{width: "18rem"}}>
-                                 <img src={article.multimedia[3].url} class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">{article.title}</h5>
-                                    <p class="card-text">{article.abstract}.</p>
-                                    <a href={article.short_url} class="btn btn-primary">Go to the Article</a>
+                          <div className="card" style={{width: "18rem"}}>
+                                 <img src={article.multimedia[3].url} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{article.title}</h5>
+                                    <p className="card-text">{article.abstract}.</p>
+                                    <a href={article.short_url} className="btn btn-primary">Go to the Article</a>
                                 </div>
                         </div>
                       )}

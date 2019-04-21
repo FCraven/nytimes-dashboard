@@ -1,21 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Navbar.css'
 
-export default class  extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    }
-  }
-
-  render() {
-    return (
-      <div>
-      Navbar
-      </div>
-    )
-  }
+const Navbar =()=> {
+  const dummyLinks = ['Archive','Article Search','Books','Geographical','Popular','Top Stories']
+  return (
+    <div className="container">
+      <ul className='navbar'>
+        {dummyLinks.map(link => <li className='nav-link'>{link}</li>)}
+      </ul>
+    </div>
+  )
 }
 
+export default Navbar

@@ -1,0 +1,31 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: auto;
+  flex: auto;
+  justify-content: space-around;
+  align-items: baseline;
+
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Georgia';
+}
+
+.navbar li {
+  display: inline;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: .5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
