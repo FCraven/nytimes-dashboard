@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar =()=> {
-  const dummyLinks = ['Archive','Article Search','Books','Geographical','Popular','Top Stories']
+  const dummyLinks = ['Arts','Automobiles','Books','Business','Fashion','Food','Health','Home','Movies','National','Politics','Real Estate','Science','Sports','Tech','Theater','Travel', 'World']
   return (
     <div className="container">
       <ul className='navbar'>
