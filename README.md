@@ -1,8 +1,9 @@
-To run, clone this repository
-Create a secrets.js file in the top level of the src folder
-In secrets js, create a variable named NYTIMES_API_KEY
-Obtain a valid API key from https://developer.nytimes.com/
-Assign your API key to the variable e.g.:
+- To run, clone this repository
+- npm install
+- Create a secrets.js file in the top level of the src folder
+- In secrets js, create a variable named NYTIMES_API_KEY
+- Obtain a valid API key from https://developer.nytimes.com/
+- Assign your API key to the variable e.g.:
 
   const NYTIMES_API_KEY = //your api key//
 

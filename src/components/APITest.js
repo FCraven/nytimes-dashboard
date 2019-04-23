@@ -8,15 +8,18 @@ export default class APITest extends Component {
     super(props)
 
     this.state = {
-      articles: []
+      articles: [],
+      isLoading: false
     }
   }
 
   async componentDidMount(){
     try {
-      const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${NYTIMES_API_KEY}`)
+      this.setState({isLoading: true})
+      const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${NYTIMES_API_KEY}`)
       console.log(`apiKey ==>`, res.data.results)
       this.setState({
+        isLoading: false,
         articles: res.data.results
       })
     } catch (error) {
@@ -26,14 +29,17 @@ export default class APITest extends Component {
 
   render() {
     console.log(`STATE ==>`,this.state)
+    const isLoading = this.state.isLoading
     return (
                 <div>
-                  <h1> Hi hi hi </h1>
+          { isLoading ? 'Loading...' :
+
                   <div>
                       {this.state.articles.map(
                         (article) =>
-                          <div className="card" style={{width: "18em"}}>
-                                 <img src={article.multimedia[3].url} className="card-img-top" alt="..." />
+                          <div  className="card"
+                                style={{width: "18em"}}>
+                                 <img src={article.multimedia[0] ? article.multimedia[0].url : '' } className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{article.title}</h5>
                                     <p className="card-text">{article.abstract}.</p>
@@ -42,6 +48,7 @@ export default class APITest extends Component {
                         </div>
                       )}
                       </div>
+        }
               </div>
       )
   }
