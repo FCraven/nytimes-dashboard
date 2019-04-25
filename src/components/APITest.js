@@ -37,8 +37,7 @@ export default class APITest extends Component {
                   <div>
                       {this.state.articles.map(
                         (article) =>
-                          <div  className="card"
-                                style={{width: "18em"}}>
+                          <div  className="card" style={{width: "18em"}}>
                                  <img src={article.multimedia[0] ? article.multimedia[0].url : '' } className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{article.title}</h5>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 import './Main.css'
 
 export default class Main extends Component {
@@ -6,13 +7,14 @@ export default class Main extends Component {
     super (props)
 
     this.state = {
-
+      articles:[],
+      isLoading: false
     }
   }
 
   render() {
     return (
-      <div>
+      <div className='container-main'>
         <h1> Hello World from the Main Component </h1>
       </div>
     )
