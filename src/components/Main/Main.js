@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NYTIMES_API_KEY } from '../../secrets'
 import axios from 'axios'
 import './Main.css'
 
@@ -9,6 +10,20 @@ export default class Main extends Component {
     this.state = {
       articles:[],
       isLoading: false
+    }
+  }
+
+  async componentDidMount() {
+    try {
+      this.setState({isLoading: true})
+      const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${NYTIMES_API_KEY}`)
+      console.log(`results==>`, res.data.results)
+      this.setState({
+        isLoading: false,
+        articles: res.data.results
+      })
+    } catch (error) {
+      console.log(error)
     }
   }
 
