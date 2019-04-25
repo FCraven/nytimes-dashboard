@@ -6,7 +6,7 @@
 - Assign your API key to this variable and export object e.g.:
 
   const NYTIMES_API_KEY = //your api key// <br>
-  export { NYTIMES_APIKEY }
+  export { NYTIMES_API_KEY }
 
 Once the api key is assigned, you are ready to start reading the news!
 
