@@ -5,7 +5,7 @@
 - Obtain a valid API key from https://developer.nytimes.com/
 - Assign your API key to this variable and export object e.g.:
 
-  const NYTIMES_API_KEY = //your api key//
+  const NYTIMES_API_KEY = //your api key// <br>
   export { NYTIMES_APIKEY }
 
 Once the api key is assigned, you are ready to start reading the news!
