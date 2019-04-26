@@ -17,10 +17,9 @@ export default class Main extends Component {
     try {
       this.setState({isLoading: true})
       const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${NYTIMES_API_KEY}`)
-      console.log(`results==>`, res.data.results)
       this.setState({
-        isLoading: false,
-        articles: res.data.results
+        articles: res.data.results,
+        isLoading: false
       })
     } catch (error) {
       console.log(error)
@@ -31,6 +30,7 @@ export default class Main extends Component {
     return (
       <div className='container-main'>
         <h1> Hello World from the Main Component </h1>
+
       </div>
     )
   }

@@ -2,11 +2,11 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar =()=> {
-  const dummyLinks = ['Arts','Automobiles','Books','Business','Fashion','Food','Health','Home','Movies','National','Politics','Real Estate','Science','Sports','Tech','Theater','Travel', 'World']
+  const dummyLinks = ['World', 'U.S.', 'Politics', 'N.Y.', 'Business','Opinion', 'Tech', 'Science', 'Health', 'Sports', 'Arts', 'Books','Style','Food','Travel','Magazine','T Magazine', 'Real Estate', 'Video']
   return (
     <div className="container">
       <ul className='navbar'>
-        {dummyLinks.map(link => <li className='nav-link'>{link}</li>)}
+        {dummyLinks.map((link,idx) => <li key={idx} className='nav-link'>{link}</li>)}
       </ul>
     </div>
   )
