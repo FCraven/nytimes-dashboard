@@ -38,3 +38,4 @@ export default class Main extends Component {
 
 
 //implement redux so you can flesh out the skeleton here
+//cut finger wide open. cannot code at hospital. fuck.
