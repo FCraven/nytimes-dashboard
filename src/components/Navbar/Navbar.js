@@ -13,3 +13,5 @@ const Navbar =()=> {
 }
 
 export default Navbar
+
+//create navlink componenet tomrrow when finger pain eases up a bit
