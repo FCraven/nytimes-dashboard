@@ -2,11 +2,11 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar =()=> {
-  const dummyLinks = ['World', 'U.S.', 'Politics', 'N.Y.', 'Business','Opinion', 'Tech', 'Science', 'Health', 'Sports', 'Arts', 'Books','Style','Food','Travel','Magazine','T Magazine', 'Real Estate', 'Video']
+  const links = [{name:'World', href:'#world'}, {name:'U.S.', href:'#us'}, {name:'Politics', href:'#politics'}, {name:'N.Y.', href:'#ny'}, {name:'Business', href:'#business'},{name:'Opinion', href:'#opinion'}, {name:'Tech', href:'#tech'}, {name:'Science', href:'#science'}, {name:'Health', href:'#health'}, {name:'Sports', href:'#sports'}, {name:'Arts', href:'#arts'}, {name:'Books', href:'#books'},{name:'Style', href:'#style'},{name:'Food', href:'#food'},{name:'Travel', href:'#travel'},{name:'Magazine', href:'#magazine'},{name:'T Magazine', href:'#t-magazine'}, {name:'Real Estate', href:'#real-estate'}, {name:'Video', href:'#video'}]
   return (
     <div className="container">
       <ul className='navbar'>
-        {dummyLinks.map((link,idx) => <li key={idx} className='nav-link'>{link}</li>)}
+        {links.map((link,idx) => <a key={idx}href={link.href}><li key={idx} className='nav-link'>{link.name}</li></a>)}
       </ul>
     </div>
   )
