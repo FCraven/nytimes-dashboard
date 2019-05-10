@@ -6,8 +6,14 @@ const Navbar =()=> {
   return (
     <div className="container">
       <ul className='navbar'>
-        {links.map((link,idx) => <a key={idx}href={link.href}><li key={idx} className='nav-link'>{link.name}</li></a>)}
+        {links.map((link,idx) =>
+          <a key={idx} href={link.href}>
+            <li key={idx} className='navbar-link'>{link.name}</li>
+          </a>)}
       </ul>
+      <div>
+        <h3>Test for sub navbar links</h3>
+      </div>
     </div>
   )
 }
