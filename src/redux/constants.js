@@ -1,0 +1,3 @@
+//CREATE CONSTANTS HERE
+
+//e.g. export const ADD_SOMETHING = 'ADD_SOMETHING'
