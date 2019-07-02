@@ -1,10 +1,9 @@
-.container-navbar {
-  width: 90%;
-  margin: auto;
-}
-.navbar {
+.sidebar-container {
   display: flex;
-  flex-direction: row;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
   flex-wrap: auto;
   flex: auto;
   justify-content: space-around;
@@ -19,11 +18,11 @@
   font-family: 'Georgia';
 }
 
-.navbar li {
+.sidebar li {
   display: inline;
 }
 
-.navbar-link {
+.sidebar-link {
   display: inline-block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: .8em;
@@ -31,6 +30,6 @@
 
 }
 
-.navbar a:link {
+.sidebar a:link {
   text-decoration: none;
 }

@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import { NYTIMES_API_KEY } from '../../secrets'
 import axios from 'axios'
 import './Main.css'
+import MainMenuCard from './MainMenuCard/index'
 
 export default class Main extends Component {
   constructor (props) {
     super (props)
 
     this.state = {
-      articles:[],
+      topStories:[],
+      mainMenuCards:[],
       isLoading: false
     }
   }
@@ -18,7 +20,7 @@ export default class Main extends Component {
       this.setState({isLoading: true})
       const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${NYTIMES_API_KEY}`)
       this.setState({
-        articles: res.data.results,
+        topStories: res.data.results,
         isLoading: false
       })
     } catch (error) {
@@ -29,7 +31,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className='container-main'>
-        <h1> Hello World from the Main Component </h1>
+        <MainMenuCard />
 
       </div>
     )

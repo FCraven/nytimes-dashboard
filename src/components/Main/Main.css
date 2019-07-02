@@ -1,7 +1,7 @@
 .container-main  {
-  width: 60em;
-  float: left;
-  height: auto;
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  padding: 10px;
   border: 1px solid black;
-  margin:1rem;
 }
