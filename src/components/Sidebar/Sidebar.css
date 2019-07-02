@@ -1,25 +1,39 @@
-.sidebar-container {
+#sidebar-container {
   display: flex;
+  width: 20vw;
 }
 .sidebar {
-  display: flex;
   flex-direction: column;
   flex-wrap: auto;
   flex: auto;
+  position: fixed;
+  height: 100%;
+  width: 10vw;
   justify-content: space-around;
   align-items: baseline;
-
-  border: 1px solid #ccc;
-  border-width: 1px 0;
+  border: 2px solid rgba(238, 230, 214, 0.3);
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: .5em;
+  padding: .5em;
   text-align: center;
   font-family: 'Georgia';
+  background-color: whitesmoke;
+  overflow: scroll;
+
 }
 
-.sidebar li {
-  display: inline;
+.sidebar-link {
+  border: 1px solid grey;
+  margin: 5%;
+  padding: 5%;
+  border-style: ridge;
+  font-size: .8em;
+  color: black;
+  box-shadow: 1px 1px 5px grey;
+  background-color: #FFFFF8;
+
+
+
 }
 
 

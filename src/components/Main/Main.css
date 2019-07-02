@@ -1,7 +1,8 @@
 .container-main  {
   display: flex;
-  width: 80%;
+  width: 80vw;
   height: 100vh;
-  padding: 10px;
+  float: right;
   border: 1px solid black;
+  margin-top: 2.5em;
 }

@@ -1,12 +1,27 @@
-
+#logo {
+  display: flex;
+  width: 90%;
+  float: right;
+  position: absolute;
+  border: 4px dotted blue;
+}
 .times-logo {
   height: 2.5em;
-  width: auto;
   justify-content: center;
   align-items: center;
   margin: .5em;
   padding-top: 10px;
 }
 
+#disclaimer {
+  justify-content: center;
+  align-items: center;
+}
 
+#header-main {
+  flex-direction: column;
+}
 
+#logo-main {
+  border: 2px solid black;
+}
