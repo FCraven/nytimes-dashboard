@@ -22,13 +22,6 @@
   display: inline;
 }
 
-.sidebar-link {
-  display: inline-block;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: .8em;
-  color: #000000;
-
-}
 
 .sidebar a:link {
   text-decoration: none;

@@ -1,11 +1,16 @@
 import React from 'react'
 import './MainMenuCard.css'
 
+
+
 const MainMenuCard =(props)=> {
+  const strops = {title: 'Test Subject'}
   return (
-    <div className='main-menu-card'>
-      <p>Hello from the Main menu card</p>
-    </div>
+    <section className='main-menu-card'>
+      <nav>
+        <span>{strops.title}</span>
+      </nav>
+    </section>
   )
 }
 
