@@ -1,0 +1,9 @@
+#most-viewed-container{
+  display: flex;
+  flex: auto;
+  flex-flow: column wrap;
+  border: 2px solid black;
+  height: 30%;
+  width: 100%;
+  margin: 2px;
+}

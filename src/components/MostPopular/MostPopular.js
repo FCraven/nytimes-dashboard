@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './MostPopular.css'
 import axios from 'axios'
 import { NYTIMES_API_KEY } from '../../secrets'
+import MostViewed from './MostViewed'
 
 export default class MostPopular extends Component {
   constructor(props) {
@@ -34,11 +35,6 @@ export default class MostPopular extends Component {
         viewed: viewedRes.data
       })
 
-      console.log(`emailed ==>`,this.state.emailed)
-      console.group()
-      console.log('shared ==>', this.state.shared)
-      console.group()
-      console.log('viewed ==>',this.state.viewed)
     } catch (error) {
       console.log(error)
     }
@@ -46,9 +42,12 @@ export default class MostPopular extends Component {
 
 
   render() {
+    const viewed = this.state.viewed;
     return (
       <div id='most-popular-container'>
-        <div className="test">HELLO WORLD</div>
+        <div id="most-viewed-container">
+          <MostViewed viewed={viewed} />
+        </div>
 
       </div>
     )

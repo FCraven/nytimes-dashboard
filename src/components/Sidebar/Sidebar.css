@@ -22,15 +22,16 @@
 }
 
 .sidebar-link {
-  border: 1px ridge grey;
+  border: 1px solid grey;
   font-size: 1.2vw;
   color: black;
   box-shadow: 0 10px 10px 0 rgb(85, 78, 78);
-  background-color: #FFFFF8;
-  margin: 10% 10% 10% auto;
+  background-color: #FDFDFD;
+  margin: 10% auto 10% 10%;
   padding: 25% 10% 5% 0;
-  border-radius: 0 1vw 1vw 0;
+  border-radius: 1vw 0 0 1vw;
   text-align: right;
+  border-right: none;
 
 }
 
@@ -39,6 +40,9 @@
   transform: scale(1.5);
   border-radius: 0;
   z-index: 5000;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
 }
 
 
