@@ -8,13 +8,13 @@ import Main from './components/Main'
 class App extends Component {
   render() {
     return (
-     
+
           <div className="App">
               <Sidebar />
-              <section id='header-main'>
-              <Logo />
-              <Main />
-            </section>
+              <div id='header-main'>
+                <Logo />
+                <Main />
+            </div>
           </div>
 
     );

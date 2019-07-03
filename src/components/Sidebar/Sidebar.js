@@ -7,7 +7,7 @@ const Sidebar =()=> {
   return (
 
       <div id="sidebar-container">
-          <ul className='sidebar'>
+          <ul id='sidebar'>
             {links.map((link,idx) =>
               <a key={idx} href={link.href}>
                 <li key={idx} className='sidebar-link'>{link.name}</li>

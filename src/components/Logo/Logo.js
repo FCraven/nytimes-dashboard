@@ -3,8 +3,8 @@ import './Logo.css'
 
 const Logo =()=> {
     return (
-    <header id='logo'>
-      <div id='logo-main'>
+
+      <div id='logo'>
         <div id='disclaimer'>
           <small> **This app is for demonstration purposes only** </small>
           <a href='https://developer.nytimes.com'>
@@ -15,7 +15,7 @@ const Logo =()=> {
               src='https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png'
               alt='The New York Times Logo' />
       </div>
-    </header>
+
     )
 }
 
