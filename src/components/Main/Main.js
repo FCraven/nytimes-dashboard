@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { NYTIMES_API_KEY } from '../../secrets'
 import axios from 'axios'
 import './Main.css'
+import Logo from './Logo/index'
 import MainMenuCard from './MainMenuCard/index'
+
 
 export default class Main extends Component {
   constructor (props) {
@@ -30,9 +32,9 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className='container-main'>
+      <div id='main-container'>
+        <Logo />
         <MainMenuCard />
-
       </div>
     )
   }
