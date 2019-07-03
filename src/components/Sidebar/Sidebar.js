@@ -1,20 +1,22 @@
 import React from 'react'
 import './Sidebar.css'
 
-const Sidebar =()=> {
-  
-      const links = [{name:'World', href:'#world', imageUrl: ''}, {name:'U.S.', href:'#us'}, {name:'Politics', href:'#politics'}, {name:'N.Y.', href:'#ny'}, {name:'Business', href:'#business'},{name:'Opinion', href:'#opinion'}, {name:'Tech', href:'#tech'}, {name:'Science', href:'#science'}, {name:'Health', href:'#health'}, {name:'Sports', href:'#sports'}, {name:'Arts', href:'#arts'}, {name:'Books', href:'#books'},{name:'Style', href:'#style'},{name:'Food', href:'#food'},{name:'Travel', href:'#travel'},{name:'Magazine', href:'#magazine'},{name:'T Magazine', href:'#t-magazine'}, {name:'Real Estate', href:'#real-estate'}, {name:'Video', href:'#video'}]
+const Sidebar =(props)=> {
+
+      const links = ['Arts', 'Automobiles', 'Books', 'Business', 'Fashion', 'Food', 'Health', 'Home','Insider','Magazine', 'Movies', 'National', 'NY Region', 'Obituaries', 'Opinion', 'Politics', 'Real Estate', 'Science', 'Sports', 'Sunday Review', 'Technology', 'Theater','T Magazine', 'Travel','Upshot', 'World']
 
 
 
-
+  console.log(`proooopppppppps-->`,props)
   return (
 
       <div id="sidebar-container">
           <ul id='sidebar'>
             {links.map((link,idx) =>
-              <a key={idx} href={link.href}>
-                <li key={idx} className='sidebar-link'>{link.name}</li>
+              <a key={idx} href='...'>
+                <li key={idx}
+                    className='sidebar-link'
+                    >{link}</li>
               </a>)}
           </ul>
       </div>

@@ -3,10 +3,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-
-  margin: 4vh auto;
+  margin: 2vh auto;
   height: 100%;
   width: 68%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-
 }
